@@ -25,51 +25,7 @@
             app:srcCompat="@drawable/fondos" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true">
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingButtonNext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="25dp"
-            android:layout_marginEnd="16dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/ic_check_white_24dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp"
-            android:focusable="true" />
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingButtonNew"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/floatingButtonNext"
-            android:layout_centerHorizontal="true"
-            android:clickable="true"
-            app:srcCompat="@drawable/ic_autorenew_white_24dp"
-            android:focusable="true" />
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingButtonClose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/floatingButtonNext"
-            android:layout_marginStart="11dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/ic_close_white_24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="11dp"
-            android:focusable="true" />
-
-    </RelativeLayout>
+// Type something ku thevayaana codugal
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -91,6 +47,7 @@
             android:hint="@string/type_something"
             android:inputType="textPersonName"
             android:paddingLeft="10sp"
+            android:imeOptions="actionDone"
             android:textColorLink="@color/colorPrimaryDark" />
 
         <EditText
@@ -108,6 +65,7 @@
             android:hint="@string/type_something"
             android:inputType="textPersonName"
             android:paddingLeft="10sp"
+            android:imeOptions="actionDone"
             android:paddingStart="10sp"
             android:textColorLink="@color/colorPrimaryDark" />
 
@@ -124,9 +82,75 @@
             android:ems="10"
             android:hint="@string/type_something"
             android:inputType="textPersonName"
+            android:imeOptions="actionDone"
             android:paddingLeft="10sp"
             android:textColorLink="@color/colorPrimaryDark"
             android:textIsSelectable="false" />
+
     </RelativeLayout>
+
+    //FLOATING ICONS ku thevayaana codugal
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingButtonNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:elevation="0dp"
+                app:srcCompat="@drawable/ic_autorenew_white_24dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingButtonClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:elevation="0dp"
+                app:srcCompat="@drawable/ic_close_white_24dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingButtonNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:elevation="0dp"
+                app:srcCompat="@drawable/ic_check_white_24dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
 
 </RelativeLayout>
