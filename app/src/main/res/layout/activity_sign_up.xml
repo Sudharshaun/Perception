@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@drawable/gradient"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="160dp"
+        android:id="@+id/layoutInput"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_white"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:elevation="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name"
+            android:textStyle="bold"
+            app:fontFamily="@font/open_sans_bold" />
+
+        <EditText
+            android:id="@+id/userSignUpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="@string/enter_your_name"
+            android:inputType="textPersonName"
+            app:fontFamily="@font/open_sans" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="@string/email"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/open_sans_bold"/>
+        <EditText
+            android:id="@+id/userSignUpEmail"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_mail_black_24dp"
+            android:hint="@string/yourmail_email_com"
+            app:fontFamily="@font/open_sans"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_mail_black_24dp" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="@string/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/open_sans_bold"/>
+        <EditText
+            android:id="@+id/userSignUpPassword"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:hint="******"
+            app:fontFamily="@font/open_sans"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_lock_black_24dp" />
+        <Button
+            android:id="@+id/signUpButton"
+            android:textColor="#FFF"
+            android:background="@drawable/rec_gradient"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:text="@string/sign_up"
+            app:fontFamily="@font/open_sans_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#FFF"
+            android:background="@drawable/rec_gradient_fb"
+            android:textAllCaps="false"
+            android:text="Sign Up with FACEBOOK"
+            app:fontFamily="@font/open_sans_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageVIew"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"
+        android:background="@drawable/background_white"
+        android:padding="5dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageVIew"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/open_sans_semibold" />
+
+</RelativeLayout>

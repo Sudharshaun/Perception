@@ -5,4 +5,12 @@
     <string name="next">Next</string>
     <string name="skip">Skip</string>
     <string name="close">Close</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="yourmail_email_com">yourmail@email.com</string>
+    <string name="email">Email</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="full_name">Full name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="signin">Sign In</string>
 </resources>

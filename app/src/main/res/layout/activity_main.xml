@@ -43,11 +43,12 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/textbox"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
             android:ems="10"
             android:hint="@string/type_something"
             android:inputType="textPersonName"
-            android:paddingLeft="10sp"
-            android:textColorLink="@color/colorPrimaryDark" />
+            android:paddingLeft="10sp" />
 
         <EditText
             android:id="@+id/textBox2"
@@ -58,6 +59,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/textbox"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
             android:ems="10"
             android:fadingEdge="none|horizontal|vertical"
             android:fadingEdgeLength="@android:dimen/notification_large_icon_height"
@@ -65,7 +68,7 @@
             android:inputType="textPersonName"
             android:paddingLeft="10sp"
             android:paddingStart="10sp"
-            android:textColorLink="@color/colorPrimaryDark" />
+             />
 
         <EditText
             android:id="@+id/textBox1"
@@ -77,13 +80,14 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:background="@drawable/textbox"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
             android:ems="10"
             android:focusable="true"
             android:hint="@string/type_something"
             android:inputType="textPersonName"
             android:imeOptions="actionDone"
             android:paddingLeft="10sp"
-            android:textColorLink="@color/colorPrimaryDark"
             android:textIsSelectable="false" />
 
     </RelativeLayout>
