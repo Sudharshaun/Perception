@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "750440684629",
+    "firebase_url": "https://perception-9cfcf.firebaseio.com",
+    "project_id": "perception-9cfcf",
+    "storage_bucket": "perception-9cfcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750440684629:android:b2ec5b7c1ff94894",
+        "android_client_info": {
+          "package_name": "com.commas.sudharshaun.perception"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750440684629-eftogcvu4jot63f05or525odkie1ht44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.commas.sudharshaun.perception",
+            "certificate_hash": "559f024d4dd968965a2c77d39d0f9093162b5c58"
+          }
+        },
+        {
+          "client_id": "750440684629-12tji10btqikdatv2rcb5u4kpkge38ke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeP_mG9LeYA2MUib7crOSQ6G8tKKkGX2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750440684629-12tji10btqikdatv2rcb5u4kpkge38ke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
