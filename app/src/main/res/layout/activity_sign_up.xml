@@ -96,16 +96,7 @@
             app:fontFamily="@font/open_sans_bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <Button
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:textColor="#FFF"
-            android:background="@drawable/rec_gradient_fb"
-            android:textAllCaps="false"
-            android:text="Sign Up with FACEBOOK"
-            app:fontFamily="@font/open_sans_bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
     </LinearLayout>
 
     <ImageView

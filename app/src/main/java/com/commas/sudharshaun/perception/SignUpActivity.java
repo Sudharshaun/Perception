@@ -51,6 +51,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String username = mUserNameText.getText().toString().trim();
         String email = mEmailIdText.getText().toString().trim();
         String password = mPasswordText.getText().toString().trim();
+
+        //Checks for empty values in text boxes
         if (TextUtils.isEmpty(username) ){
             Toast.makeText(getApplicationContext(), "Enter a User Name", Toast.LENGTH_SHORT).show();
             return;
@@ -69,19 +71,22 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         mProgressDialog.setMessage("Registering User");
         mProgressDialog.show();
 
+        //End verification
+
         mFirebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     Toast.makeText(getApplicationContext(),"You have successfully Registered", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                    SignUpActivity.this.startActivity(intent);
                 }
                 else {
                     Toast.makeText(getApplicationContext(), "Oops! Registration unsuccessful. Please try again later.", Toast.LENGTH_SHORT).show();
                 }
 
                 mProgressDialog.hide();
-                Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
-                SignUpActivity.this.startActivity(intent);
+
 
             }
         });
